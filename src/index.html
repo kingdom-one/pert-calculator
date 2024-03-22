@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1" />
+		<title>PERT Calculator | A tool for Kingdom One</title>
+		<script
+			type="module"
+			src="./index.tsx"></script>
+	</head>
+	<body class="container py-4 g-5 overflow-x-hidden">
+		<header
+			class="row justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
+			<div class="col-auto"><h1 class="h4">PERT Calculator</h1></div>
+			<div class="col-auto">
+				<a
+					href="https://github.com/twbs/examples/tree/main/parcel/"
+					target="_blank"
+					rel="noopener"
+					>View on GitHub</a
+				>
+			</div>
+		</header>
+		<main class="row">
+			<div class="col-lg-8">
+				<h1 class="fs-2">Estimate your project's time with ease.</h1>
+				<p>
+					A PERT calculator helps you give a project's time estimate by
+					accounting for unknown variables. You give three time estimates for
+					each task: the optimistic time, the most likely time, and the
+					pessimistic time. The PERT calculator then calculates the expected
+					time for each task and the expected project duration.
+				</p>
+			</div>
+			<div
+				id="app"
+				class="col-lg-8"></div>
+		</main>
+	</body>
+</html>

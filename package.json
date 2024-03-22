@@ -1,0 +1,22 @@
+{
+  "name": "k1-pert-caclulator",
+  "version": "1.0.0",
+  "description": "A simple way to estimate project timelines",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /"
+  },
+  "author": "Kingdom One",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "parcel": "^2.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "@wordpress/prettier-config": "^3.3.0",
+    "process": "^0.11.10"
+  }
+}
