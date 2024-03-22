@@ -15,14 +15,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout
+        uses: actions/checkout@main
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages
+        uses: actions/configure-pages@main
 
       - name: Build with Bun
-        uses: oven-sh/setup-bun
+        uses: oven-sh/setup-bun@main
 
       - name: Install dependencies and build
         run: |
@@ -30,7 +30,7 @@ jobs:
           bun run build
 
       - name: Upload Pages Artifact
-        uses: actions/upload-artifact
+        uses: actions/upload-artifact@main
         with:
           path: './dist/'
 
@@ -43,4 +43,4 @@ jobs:
     steps:
       - name: Deploy to Github Pages
         id: deployment
-        uses: actions/deploy-pages
+        uses: actions/deploy-pages@main
