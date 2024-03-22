@@ -4,7 +4,7 @@
 	"description": "A simple way to estimate project timelines",
 	"scripts": {
 		"start": "parcel src/index.html",
-		"build": "parcel build src/index.html --public-url /k1-pert-calculator"
+		"build": "parcel build src/index.html --public-url /pert-calculator"
 	},
 	"author": "Kingdom One",
 	"license": "GPL-3.0-or-later",
