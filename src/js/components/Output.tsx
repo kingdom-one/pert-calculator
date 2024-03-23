@@ -37,18 +37,18 @@ export default function Output({ pert, hours }) {
 	}, [pert, hours]);
 
 	return (
-		<div className="output border border-2 border-primary rounded-2 p-4">
-			<h3 className="fs-5 mb-3">PERT Estimates</h3>
+		<div className="output border border-2 border-primary rounded-5 p-4 shadow-lg">
+			<h2 className="fs-3 fw-bold mb-3">PERT Estimates</h2>
 			<ul className="list-unstyled">
 				<li>
-					<span className="fw-bold">PERT Estimated Hours:</span>{' '}
+					<span className="fw-normal">PERT Estimated Hours:</span>{' '}
 					{`${Math.round(expected)}`}
 				</li>
 				<li>
-					<span className="fw-bold">K1 Talent Hours:</span> {talentHours}
+					<span className="fw-normal">K1 Talent Hours:</span> {talentHours}
 				</li>
 				<li>
-					<span className="fw-bold">Actual Days:</span>{' '}
+					<span className="fw-normal">Actual Days:</span>{' '}
 					{`${Math.round(expected / 8)}`}
 				</li>
 			</ul>

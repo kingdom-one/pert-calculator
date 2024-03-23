@@ -3,7 +3,7 @@ import TimeModifier from './TimeModifier';
 
 export default function PertForm({ state, setState, hours, setHours }) {
 	return (
-		<form className="my-4 border bg-gradient text-bg-primary rounded-2 p-4">
+		<form className="my-4 border bg-gradient shadow-lg border-primary text-bg-primary rounded-5 p-4">
 			{Object.keys(state).map((key) => {
 				return (
 					<div

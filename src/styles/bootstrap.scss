@@ -1,10 +1,14 @@
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
+$primary: #00644b;
+$success: #00ae83;
+$dark: #2b3636;
+
 $font-size-root: 62.5%; // 1rem = 10px
 $font-size-base: 1.6rem; // Assumes the browser default, typically `16px`
 
 // Toggle global options
-$enable-gradients: true;
+$enable-gradients: false;
 $enable-shadows: true;
 
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);

@@ -10,33 +10,71 @@
 			type="module"
 			src="./index.tsx"></script>
 	</head>
-	<body class="container py-4 g-5 overflow-x-hidden">
-		<header
-			class="row justify-content-between align-items-md-center pb-3 mb-5 border-bottom">
-			<div class="col-auto"><h1 class="h4">PERT Calculator</h1></div>
-			<div class="col-auto">
-				<a
-					href="https://github.com/twbs/examples/tree/main/parcel/"
-					target="_blank"
-					rel="noopener"
-					>View on GitHub</a
-				>
+	<body class="overflow-x-hidden text-bg-dark">
+		<div class="container-fluid g-5">
+			<div class="container">
+				<header
+					class="row justify-content-between align-items-md-center py-5 mb-5 border-bottom">
+					<div class="col-auto">
+						<h1 class="h4">PERT Calculator</h1>
+					</div>
+					<div class="col-auto">
+						<a
+							href="https://github.com/kingdom-one/pert-calculator"
+							target="_blank"
+							rel="noopener"
+							class="text-white"
+							>View on GitHub</a
+						>
+					</div>
+				</header>
 			</div>
-		</header>
-		<main class="row">
-			<div class="col-lg-8">
-				<h1 class="fs-2">Estimate your project's time with ease.</h1>
-				<p>
-					A PERT calculator helps you give a project's time estimate by
-					accounting for unknown variables. You give three time estimates for
-					each task: the optimistic time, the most likely time, and the
-					pessimistic time. The PERT calculator then calculates the expected
-					time for each task and the expected project duration.
-				</p>
+		</div>
+		<main class="container my-5">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<h1>Estimate your project's time with ease.</h1>
+					<p class="fs-5">
+						This app assumes that
+						<em><mark>1 day = 8 hours of work</mark></em> (like a normal
+						workday), so if you set the dropdown to "days," the app will
+						calculate that.
+					</p>
+					<p class="fs-5">
+						Since so many of us work part time, if you select "Weekly" a new
+						field will appear so you can input your average hours-per-week
+						worked.
+					</p>
+				</div>
+				<div
+					id="app"
+					class="col-lg-10 fs-5"></div>
+				<div class="col-lg-10 my-5">
+					<h2>How it works</h2>
+					<p class="fs-5">
+						A PERT calculator helps you give a project's time estimate by
+						accounting for unknown variables. You give three time estimates for
+						each task: the optimistic time, the most likely time, and the
+						pessimistic time. The PERT calculator then calculates the expected
+						time for each task and the expected project duration.
+					</p>
+				</div>
 			</div>
-			<div
-				id="app"
-				class="col-lg-8"></div>
 		</main>
+		<footer class="container py-5 border-top border-2 border-white">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<p class="text-center">
+						Built with ❤️ by
+						<a
+							href="https://www.kingdomone.co"
+							target="_blank"
+							class="text-white"
+							>Kingdom One</a
+						>
+					</p>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
