@@ -18,6 +18,7 @@ export default function PertForm({ state, setState, hours, setHours }) {
 							<input
 								id={key}
 								type="number"
+pattern="[0-9]*"
 								className="form-control"
 								value={state[key].value}
 								onChange={(ev) => {
